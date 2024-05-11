@@ -1,0 +1,35 @@
+$font-stack: Helvetica, sans-serif;
+
+
+//skapa lite variable 
+$navcolor :  #85b1b0;
+$light-navcolor: lighten($navcolor, 30%);
+$dark-navcolor: darken($navcolor, 30%);
+$primary-color: #333;
+$light-primary-color: lighten($primary-color, 40%);
+$font-size: 15px;
+$font-mobil: 17px;
+
+
+
+//skapa mixin för olika element
+@mixin titel {
+padding-top: 30px;
+padding-bottom: 15px;
+color: $primary-color;
+}
+
+@mixin box {
+    padding-right: 30px;
+    width: 50%;
+}  
+@mixin text{
+    width: 70%;
+    margin-left: 2%;
+    margin-top: 5px;
+font-size: $font-size ;
+margin-bottom: 7px;
+}
+
+
+

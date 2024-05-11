@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+}
+
+.container {
+  background-color: #e2edec;
+  padding-bottom: 100px;
+}
+
+.topnav {
+  background-color: #85b1b0;
+  overflow: visible;
+  height: 100px;
+}
+
+.topnav a {
+  color: #333;
+  padding: 40px 20px;
+  text-decoration: none;
+  font-size: 15px;
+  float: right;
+}
+
+.topnav a.icon {
+  display: none;
+}
+
+#myLinks {
+  display: block;
+}
+
+.h1 {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  color: #333;
+  font-size: 35px;
+  padding-left: 30%;
+}
+
+.h {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  color: #333;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.text {
+  width: 70%;
+  margin-left: 2%;
+  margin-top: 5px;
+  font-size: 15px;
+  margin-bottom: 7px;
+  padding-bottom: 5px;
+}
+
+.content {
+  display: flex;
+  padding-left: 40px;
+  background-color: #85b1b0;
+  margin-top: 20px;
+}
+
+.Utskrift {
+  padding-left: 40px;
+}
+
+.box {
+  padding-right: 30px;
+  width: 50%;
+}
+
+footer {
+  height: 60px;
+  background-color: #85b1b0;
+}
+
+footer p {
+  font-size: 15px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav {
+    overflow: hidden;
+    background-color: #85b1b0;
+    position: relative;
+  }
+  .topnav #myLinks {
+    display: none;
+  }
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+  }
+  .topnav a.icon {
+    background: #3d605f;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 45px;
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .active {
+    background-color: #3d605f;
+    color: white;
+    margin-right: 70%;
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .topnav a {
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+  .content {
+    display: block;
+  }
+  .container {
+    padding-bottom: 40px;
+  }
+  .box {
+    padding-right: 10px;
+    width: 100%;
+  }
+  .h1 {
+    font-size: 25px;
+    padding-left: 13%;
+  }
+  .text {
+    padding-top: 7px;
+  }
+}

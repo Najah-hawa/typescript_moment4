@@ -1,0 +1,73 @@
+
+@media screen and (max-width: 600px){
+// design för menu i mobil läge 
+  .topnav {
+    overflow: hidden;
+    background-color: $navcolor;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: $dark-navcolor;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+   height: 45px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .active {
+    background-color:  $dark-navcolor;
+    color: white;
+    margin-right: 70%;
+    margin-top: 0px;
+  }
+  
+}
+
+
+@media screen and (max-width: 400px){
+  .topnav a {
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+// display de två divar som block element
+  .content{
+    display: block;
+    }
+    // ändra bottom från 100 till 40 vid mobilläge
+    .container{
+      padding-bottom: 40px;
+      }
+      // ange width för 100% istället för 50 % eftersom de är blocck element nu
+    .box {
+      padding-right: 10px;
+      width: 100%;
+      
+    }
+
+  // ändra fontsize och gör det lite mindre 
+    .h1{
+      font-size: 25px;
+      padding-left: 13%;
+       }
+      .text{
+       padding-top: 7px;
+      }
+}

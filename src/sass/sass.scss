@@ -1,0 +1,75 @@
+@import  "basic";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+    font: 100% $font-stack;
+    color: $primary-color;
+}
+.container{
+background-color: $light-navcolor;
+padding-bottom: 100px;
+}
+.topnav {
+    background-color: $navcolor;
+    overflow:visible;
+    height: 100px;
+}
+.topnav a {
+    color: $primary-color;
+    padding: 40px 20px;
+    text-decoration: none;
+    font-size: $font-size;
+    float: right;
+}
+.topnav a.icon {
+    display: none;
+}
+
+#myLinks {
+    display: block;
+}
+
+// användning av mixin 
+.h1{
+  @include titel;
+  font-size: 35px;
+  padding-left: 30%;
+}
+.h{
+   @include titel;
+   font-size: 25px;
+   margin-bottom: 5px;
+}
+.text{
+  @include text;
+  padding-bottom: 5px;
+}
+.content{
+display: flex;
+padding-left:40px;
+background-color: $navcolor; 
+margin-top: 20px;
+}
+.Utskrift{
+  padding-left:40px;
+}
+.box {
+  @include box; 
+}
+footer{
+  height: 60px;
+  background-color: $navcolor;
+}
+footer p{
+  font-size: $font-size;
+  text-align: center;
+  padding-top: 20px;
+}
+//import inställningar för css i mobilläge
+@import "media";
+  
+  
